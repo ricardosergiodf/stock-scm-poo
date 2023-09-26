@@ -11,13 +11,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 10px;
-    border: 5px solid red;
     width: 250px;
     height: 100vh;
 }
 
 .ocultar {
-    left: -215px !important;
+    left: -210px !important;
     transition: all .2s;
 }
 
