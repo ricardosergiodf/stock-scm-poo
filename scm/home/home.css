@@ -67,10 +67,18 @@
     align-items: center;
 }
 
-.settings {
+#profile-icon {
     cursor: pointer;
 }
 
 body {
     overflow: hidden; /* colocar overflow: auto !important no colaboradores */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
 }
