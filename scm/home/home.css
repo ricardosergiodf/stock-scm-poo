@@ -30,6 +30,8 @@
 
 .btn_menuItem {
     cursor: pointer;
+    background-color: #3e3e42;
+    width: 80px;
 }
 
 .ocultar {
@@ -51,4 +53,10 @@
 
 .menu_perfilDadosHeader {
     color: #fff;
+}
+
+#menuItens {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
