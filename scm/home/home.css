@@ -55,6 +55,10 @@
     color: #fff;
 }
 
+.menuItens {
+    text-align: center;
+}
+
 #menuItens {
     display: flex;
     flex-direction: column;
