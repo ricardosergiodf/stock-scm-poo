@@ -3,82 +3,34 @@
     padding: 0px;
 }
 
-.menuPrincipal {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.header {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 10px;
-    width: 250px;
-    height: 100vh;
+    background-color: #3e3e42;
+    justify-content: space-between;
+  }
+
+#logo_menu {
+    width: 80px;
+}
+
+.menu_lateral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .ocultar {
-    left: -210px !important;
-    transition: all .2s;
+    display: none;
 }
 
-.menuItens {
+.menu_perfilDados {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ccc;
-    height: 100%;
-}
-
-.btn_menuItem {
-    cursor: pointer;
-    margin: 5px;
-    padding: 5px 15px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #888;
-    text-align: center;
-}
-
-.btn_menuPrincipal {
-    cursor: pointer;
-    width: 30px;
-}
-
-.btn_menuPrincipal img {
-    width: inherit;
-}
-
-.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #282832;
-    color: white;
-    height: 30px;
-}
-
-.logo {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
 }
 
-#profile-icon {
-    cursor: pointer;
-}
-
-body {
-    overflow: hidden; /* colocar overflow: auto !important no colaboradores */
-}
-
-.profile {
+.menu_perfilLogin {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
 }

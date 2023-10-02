@@ -1,14 +1,15 @@
-const btn_menuPrincipal = document.querySelector('#btn_menuPrincipal');
-const menuPrincipal = document.querySelector('.menuPrincipal');
-const todosMenusPrincipais = [...document.querySelectorAll('.btn_menuItem')];
-const btn_profile = document.querySelector('#btn_profile');
+const menuItens = document.querySelector('.menuItens');
+const btn_menuLateral = document.querySelector('#btn_menuLateral');
+const btn_fecharMenuLateral = document.querySelector('#btn_fecharMenuLateral');
 
-btn_menuPrincipal.addEventListener('click', (event) => {
-    menuPrincipal.classList.toggle('ocultar');
+btn_menuLateral.addEventListener('click', () => {
+    btn_menuLateral.classList.add('ocultar');
+    btn_fecharMenuLateral.classList.remove('ocultar');
+    menuItens.classList.remove('ocultar');
 });
 
-todosMenusPrincipais.forEach(element => {
-    element.addEventListener('click', (event) => {
-        menuPrincipal.classList.add('ocultar');
-    });
-})
+btn_fecharMenuLateral.addEventListener('click', () => {
+    btn_fecharMenuLateral.classList.add('ocultar');
+    btn_menuLateral.classList.remove('ocultar');
+    menuItens.classList.add('ocultar');
+});

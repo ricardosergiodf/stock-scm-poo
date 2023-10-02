@@ -8,33 +8,48 @@
     <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
 </head>
 <body>
-    <div class="menuPrincipal ocultar" id="menuPrincipal">
-        
-        <div class="menuItens">
-            <button class="btn_menuItem">Item</button>
-            <button class="btn_menuItem">Item</button>
-            <button class="btn_menuItem">Item</button>
-            <button class="btn_menuItem">Item</button>
-        </div>
-
-        <div>
-            <img src="/imgs/menu.svg" id="btn_menuPrincipal" class="btn_menuPrincipal" alt="botão menu">
-        </div>
-    </div>
-
-    <div class="topo" id="topo">
-        <div></div>
-        <div id="logo" class="logo">Logo</div>
-        <div id="profile" class="profile">
-            <div>
-                <div>id</div>
-                <div>nome</div>
+    <header class="header">
+        <div class="menu_lateral" id="menu_lateral">
+            <img id="logo_menu" src="/imgs/SCM_logo_abrev.png" alt="SCM logo">
+            <div class="menuItens ocultar">
+                <button class="btn_menuItem">Item</button>
+                <button class="btn_menuItem">Item</button>
+                <button class="btn_menuItem">Item</button>
+                <button class="btn_menuItem">Item</button>
             </div>
-            <a href="/scm/home/home.html">
-                <img src="/imgs/profile-icon.svg" id="btn_profile" alt="icone de perfil">
-            </a>
+
+            <img id="btn_menuLateral" src="/imgs/menu.svg" alt="abrir menu">
+            <img id="btn_fecharMenuLateral" class="ocultar" src="/imgs/back-menu.svg" alt="fechar menu">
         </div>
-    </div>
+        <div></div>
+        <div class="menu_perfilLogin">
+            <div class="menu_perfilDados">
+                <img src="/imgs/profile-icon.svg" alt="icone perfil">
+                <div>
+                    <a>nome</a>
+                    <a>email</a>
+                </div>
+            </div>
+            <div class="menu_perfil">
+                <!-- FORMULARIO LOGIN -->
+                <form action="" class="menu_login">
+                    <section id="section_login">
+        
+                        <label for="email">
+                            <input id="email_login" type="email" name="email" placeholder="Email">
+                        </label>
+        
+                        <label>
+                            <input id="senha_login" type="password" name="password" placeholder="Senha">
+                        </label>
+        
+                        <button class="btn" id="btn_login">Entrar</button>
+                    </section>
+                </form>
+            </div>
+
+        </div>
+    </header>
     
     <script src='home.js' type="module"></script>
 </body>
