@@ -11,12 +11,25 @@
 
 #logo_menu {
     width: 80px;
+    cursor: pointer;
 }
 
 .menu_lateral {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#btn_menuLateral {
+    cursor: pointer;
+}
+
+#btn_fecharMenuLateral {
+    cursor: pointer;
+}
+
+.btn_menuItem {
+    cursor: pointer;
 }
 
 .ocultar {
@@ -27,10 +40,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu_perfilLogin {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.menu_perfilDadosHeader {
+    color: #fff;
 }
