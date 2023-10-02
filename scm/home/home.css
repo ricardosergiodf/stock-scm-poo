@@ -57,10 +57,13 @@
 
 .menuItens {
     text-align: center;
+    background-color: #3e3e42;
+    width: 80px;
 }
 
 #menuItens {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: #fff;
 }
