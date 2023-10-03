@@ -10,7 +10,7 @@
 }
 
 #logo_menu {
-    width: 80px;
+    width: 100px;
     height: 100%;
     cursor: pointer;
 }
@@ -30,9 +30,11 @@
 }
 
 .btn_menuItem {
+    text-align: center;
     cursor: pointer;
     background-color: #3e3e42;
-    width: 80px;
+    font-size: 100%;
+    margin-right: 10px;
 }
 
 .ocultar {
@@ -73,7 +75,8 @@
 .menuItens {
     text-align: center;
     background-color: #3e3e42;
-    width: 80px;
+    width: 100px;
+    height: 100vh;
 }
 
 #menuItens {
@@ -84,22 +87,25 @@
 }
 
 .icon_estoque {
-    width: 28px;
+    width: 45px;
 }
 
 .tela_central {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #004AAD;
 }
 
 .label_estoque {
-    width: 80px;
+    max-width: 100px;
+    width: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 5px;
 }
 
 .dados_gerenciamento {
@@ -131,4 +137,12 @@
   
 .dados_busca {
     padding: 5px;
+}
+
+.nome_empresa {
+    font-size: 25px;
+}
+
+#estoque_id {
+    font-size: 15px;
 }
