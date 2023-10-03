@@ -3,6 +3,22 @@ const btn_menuLateral = document.querySelector('#btn_menuLateral');
 const btn_fecharMenuLateral = document.querySelector('#btn_fecharMenuLateral');
 const btn_menuItem = document.querySelectorAll('.btn_menuItem');
 const estoque_num = document.querySelector('#estoque_num');
+const btn_addProduto = document.querySelector('.btn_addProduto');
+const tela_central = document.querySelector('.tela_central');
+const div_adicionarProduto = document.querySelector('.div_adicionarProduto');
+const btn_cancelarAdd = document.querySelector('.btn_cancelarAdd');
+
+btn_addProduto.addEventListener('click', () => {
+    div_adicionarProduto.classList.remove('ocultar');
+    div_adicionarProduto.style.display = 'flex';
+    btn_addProduto.classList.add('ocultar')
+})
+
+btn_cancelarAdd.addEventListener('click', () => {
+    div_adicionarProduto.style.display = '';
+    btn_addProduto.classList.remove('ocultar');
+    div_adicionarProduto.classList.add('ocultar');
+})
 
 btn_menuItem.forEach(estoque => {
     estoque.addEventListener('click', () => {
