@@ -30,11 +30,11 @@
                     <section id="section_login">
         
                         <label for="email">
-                            <input id="email_login" type="email" name="email" placeholder="Email">
+                            <input id="email_login" type="email" name="email" placeholder="Email" required>
                         </label>
         
                         <label>
-                            <input id="senha_login" type="password" name="password" placeholder="Senha">
+                            <input id="senha_login" type="password" name="password" placeholder="Senha" required>
                         </label>
         
                         <button class="btn btn-primary" id="btn_login">Entrar</button>
@@ -92,14 +92,14 @@
                 </div>
             </div>
     
-            <div class="div_adicionarProduto ocultar">
-                <input type="text" placeholder="Nome do produto">
-                <input type="number" placeholder="ID do produto">
+            <form class="form_adicionarProduto ocultar">
+                <input type="text" placeholder="Nome do produto" required>
+                <input type="number" placeholder="ID do produto" required>
                 <label for="botoes">
                     <button class="btn btn-success btn_adicionarProduto">Adicionar produto</button>
                     <button class="btn btn-danger btn_cancelarAdd">Cancelar</button>
                 </label>
-            </div>
+            </form>
     
         </div>
     </div>
