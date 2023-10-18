@@ -167,3 +167,13 @@
 input {
     padding: 5px;
 }
+
+.produto {
+    display: flex;
+    flex-direction: row;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+}
