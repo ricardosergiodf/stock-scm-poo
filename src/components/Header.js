@@ -44,7 +44,7 @@ const Header = () => {
       <Image
         src="/imgs/SCM_logo_abrev.png"
         alt="SCM"
-        width={80} // ajuste conforme necessário
+        width={202} // ajuste conforme necessário
         height={50} // ajuste conforme necessário
       />
       <Flex ml="auto">
