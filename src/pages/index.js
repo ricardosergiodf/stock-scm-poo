@@ -75,7 +75,7 @@ const Produtos = () => {
     ).length;
 
     if (hasEntries || hasOutputs) {
-      alert("Esse produto possuí movimentações!");
+      alert("Esse produto possui movimentações!");
       return;
     }
 
@@ -90,11 +90,11 @@ const Produtos = () => {
     <Flex h="100vh" flexDirection="column">
       <Header />
 
-      <Flex w="100%" my="6" maxW={1120} mx="auto" px="6" h="100vh">
+      <Flex w="100%" maxW={1120} h="100vh">
         <Sidebar />
 
         <Box w="100%">
-          <SimpleGrid minChildWidth={240} h="fit-content" spacing="6">
+          <SimpleGrid minChildWidth={240} h="fit-content" spacing="6" my="6">
             <Input
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -124,7 +124,7 @@ const Produtos = () => {
                         p="2"
                         h="auto"
                         fontSize={11}
-                        color="red.500"
+                        color="red"
                         fontWeight="bold"
                         onClick={() => removeProduct(item.id)}
                       >

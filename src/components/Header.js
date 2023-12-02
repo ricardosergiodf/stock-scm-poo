@@ -24,15 +24,13 @@ const Header = () => {
     <Flex
       as="header"
       w="100%"
-      maxW={1120}
       h="20"
-      mx="auto"
-      px="2"
       py="2"
       align="center"
       boxShadow="0 1px 0 #ccc"
-      color="gray.500"
+      color="#fff"
       fontWeight="bold"
+      bg="#3e3e42"
     >
       {isMobile && (
         <IconButton
@@ -51,7 +49,7 @@ const Header = () => {
       />
       <Flex ml="auto">
         <HStack>
-          <Text>Usuário teste</Text>
+          <Text color="#fff">Usuário teste</Text>
           <Avatar size="md" name="Usuário teste" />
         </HStack>
       </Flex>

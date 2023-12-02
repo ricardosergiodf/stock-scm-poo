@@ -79,11 +79,11 @@ const StockOutputs = () => {
     <Flex h="100vh" flexDirection="column">
       <Header />
 
-      <Flex w="100%" my="6" maxW={1120} mx="auto" px="6" h="100vh">
+      <Flex w="100%" maxW={1120} h="100vh">
         <Sidebar />
 
         <Box w="100%">
-          <SimpleGrid minChildWidth={240} h="fit-content" spacing="6">
+          <SimpleGrid minChildWidth={240} h="fit-content" spacing="6" my="6">
             <Select
               value={product_id}
               onChange={(e) => setProduct_id(e.target.value)}
