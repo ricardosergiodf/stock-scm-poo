@@ -24,16 +24,16 @@ const Sidebar = () => {
   if (isDrawerSidebar) {
     return (
       <Drawer isOpen={isOpen} placement="left" onClose={() => onClose()}>
-        <DrawerOverlay>
-          <DrawerContent p="2" onClick={() => onClose()}>
+        {/* <DrawerOverlay> */}
+          <DrawerContent p="" onClick={() => onClose()}>
             <DrawerCloseButton />
-            <DrawerHeader />
+            {/* <DrawerHeader /> */}
 
-            <DrawerBody>
+            {/* <DrawerBody> */}
               <SidebarNav />
-            </DrawerBody>
+            {/* </DrawerBody> */}
           </DrawerContent>
-        </DrawerOverlay>
+        {/* </DrawerOverlay> */}
       </Drawer>
     );
   }
