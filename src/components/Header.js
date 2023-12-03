@@ -1,3 +1,4 @@
+// Importa os módulos necessários do Chakra UI e do React
 import {
   Avatar,
   Flex,
@@ -8,18 +9,24 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
+
+// Importa o contexto SidebarContext e o ícone FiMenu do react-icons
 import { useSidebarContext } from "../contexts/SidebarContext";
 import { FiMenu } from "react-icons/fi";
 import Image from 'next/image';
 
+// Define o componente Header
 const Header = () => {
+  // Usa o hook useBreakpointValue para determinar se o layout deve ser ajustado para visualização em dispositivos móveis
   const isMobile = useBreakpointValue({
     base: true,
     lg: false,
   });
 
+  // Obtém a função onOpen do contexto SidebarContext
   const { onOpen } = useSidebarContext();
 
+  // Retorna o JSX que representa o cabeçalho
   return (
     <Flex
       as="header"
@@ -32,6 +39,7 @@ const Header = () => {
       fontWeight="bold"
       bg="#3e3e42"
     >
+      {/* Ícone de menu para dispositivos móveis */}
       {isMobile && (
         <IconButton
           icon={<Icon as={FiMenu} />}
@@ -41,15 +49,22 @@ const Header = () => {
           mr="2"
         ></IconButton>
       )}
+
+      {/* Logo da aplicação */}
       <Image
         src="/imgs/SCM_logo_abrev.png"
         alt="SCM"
         width={202} // ajuste conforme necessário
         height={50} // ajuste conforme necessário
       />
+
+      {/* Seção do usuário à direita do cabeçalho */}
       <Flex ml="auto">
         <HStack>
+          {/* Nome do usuário */}
           <Text color="#fff">Usuário teste</Text>
+
+          {/* Avatar do usuário */}
           <Avatar size="md" name="Usuário teste" />
         </HStack>
       </Flex>
@@ -57,4 +72,5 @@ const Header = () => {
   );
 };
 
+// Exporta o componente Header como padrão
 export default Header;

@@ -23,11 +23,11 @@ const Transfer = () => {
     const [listProducts, setListProducts] = useState([]);
 
     useEffect(() => {
-        const db_stock_outputs = localStorage.getItem("db_stock_outputs")
-            ? JSON.parse(localStorage.getItem("db_stock_outputs"))
+        const db_stock_transfer = localStorage.getItem("db_stock_transfer")
+            ? JSON.parse(localStorage.getItem("db_stock_transfer"))
             : [];
 
-        setTransfer(db_stock_outputs);
+        setTransfer(db_stock_transfer);
 
         const db_products = localStorage.getItem("db_products")
             ? JSON.parse(localStorage.getItem("db_products"))
@@ -45,14 +45,14 @@ const Transfer = () => {
 
         if (listTransfer && listTransfer.length) {
             localStorage.setItem(
-                "db_stock_outputs",
+                "db_stock_transfer",
                 JSON.stringify([...listTransfer, { id, amount, product_id }])
             );
 
             setTransfer([...listTransfer, { id, amount, product_id }]);
         } else {
             localStorage.setItem(
-                "db_stock_outputs",
+                "db_stock_transfer",
                 JSON.stringify([{ id, amount, product_id }])
             );
 
@@ -66,7 +66,7 @@ const Transfer = () => {
     const removeOutput = (id) => {
         const newArray = listTransfer.filter((item) => item.id !== id);
 
-        localStorage.setItem("db_stock_outputs", JSON.stringify(newArray));
+        localStorage.setItem("db_stock_transfer", JSON.stringify(newArray));
 
         setTransfer(newArray);
     };
