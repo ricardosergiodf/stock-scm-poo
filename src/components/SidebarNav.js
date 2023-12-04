@@ -38,7 +38,7 @@ const SidebarNav = () => {
             px="4"
             py="2"
             borderRadius={5}
-            bg={asPath === "/" ? "#3e3e42" : ""}
+            bg={asPath === "/" ? "#3e3e42" : "#3e3e42"}
           >
             <Link href="/stocks">
               <Text fontSize="md" fontWeight="medium" color="#fff" ml="2">

@@ -65,7 +65,7 @@ const Header = () => {
           <Text color="#fff">Usuário teste</Text>
 
           {/* Avatar do usuário */}
-          <Avatar size="md" name="Usuário teste" />
+          <Avatar size="md" name="Usuário teste" mr="2" />
         </HStack>
       </Flex>
     </Flex>
